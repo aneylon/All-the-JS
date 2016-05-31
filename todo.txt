@@ -1,0 +1,36 @@
+variables 
+  numbers
+  strings
+  booleans  
+  arrays
+  objects
+  
+types
+  typeof
+  instanceof
+  isNaN
+  
+functions
+  returns
+  Parameters
+  Arguments
+  Callbacks
+  IIFE
+
+operators
+comparisions
+Conditions
+Loops
+Break / Continue
+Scope
+Events
+Date
+Math
+
+methods
+
+Regex
+
+recusion
+this
+Prototype
