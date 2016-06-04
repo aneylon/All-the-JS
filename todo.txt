@@ -34,3 +34,10 @@ Regex
 recusion
 this
 Prototype
+
+ES6
+  arrow functions
+  spread
+  default values
+  const
+  let
