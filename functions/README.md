@@ -6,7 +6,7 @@
   They have properties and methods.
 
 ## Definition
-``` 
+```javascript
 function functionName(){
   // statements
 }
@@ -37,12 +37,26 @@ If a return value is not specified then the function returns undefined.
 ## Anonymous Function
 
 ## Closure
-```
+```javascript
+var outer = function(){
+  var _private = 0;
+  var inner = function(){
+    // statements
+    return _private += 1;
+  }
+  return inner;
+}
 
 ```
 
 ## IIFE
-```
+#### Immediately Invoked Function Expressions
+aka Self Executing Anonymous Functions
+aka Self Invoked Anonymous Functions
+
+Functions that run as soon as they are defined.
+Useful for creating private variables.
+```javascript
 (function(){
   //statements
 })();

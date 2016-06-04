@@ -7,7 +7,7 @@ To use the tests use npm to download and install required libraries.
 
 ## Using the Repo
 Read the instructions for each section.
-Complete the requirements in the files.
+Complete the prompts in the 'Answers' file.
 Open the TestRunner.html file to see which tests are failing or passing.
 
 ## Checking answers
