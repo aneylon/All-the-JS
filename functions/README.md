@@ -1,37 +1,43 @@
-#Functions
+# Functions
   typeof returns 'function'
+  
   instanceof is 'function'
 
-  But functions are objects.
-  They have properties and methods.
+  Functions are first class objects because they have properties and methods.
 
 ## Definition
-The difference between difining with the var keyword or without.
+function declaration
 ```javascript
 function functionName(){
   // statements
 }
-
-||
-
+```
+function expressions
+```javascript
 var functionName = function(){
   // statements
 }
-
 ```
+it is generally recomended to use function expressions over declarations.
 
 ## Invocation
 () invokes a function.
+
 Using () to invoke a function right after it is defined.
 
 ## Return
 If a return value is not specified then the function returns undefined.
 
+- case of constructor, return value of this.
+
 ## Parameters
-  Parameters are the names of variables in a function definition
+  Parameters are the names of variables in a function definition.
 
 ## Arguments
+  Arguments are the values passsed to a function upon it invocation.
+  
   The arguments property is an object that contains all the arguments passed to a function on it's invocation.
+  
   It's keys are numbered and it has a length property. However it is not an array and has no access to array methods.
 
 ## Callbacks
