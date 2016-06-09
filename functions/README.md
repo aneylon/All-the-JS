@@ -6,6 +6,7 @@
   They have properties and methods.
 
 ## Definition
+The difference between difining with the var keyword or without.
 ```javascript
 function functionName(){
   // statements
@@ -21,6 +22,7 @@ var functionName = function(){
 
 ## Invocation
 () invokes a function.
+Using () to invoke a function right after it is defined.
 
 ## Return
 If a return value is not specified then the function returns undefined.
