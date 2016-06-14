@@ -41,6 +41,8 @@ If a return value is not specified then the function returns undefined.
 ```
 ## Arguments
   Arguments are the values passed to a function upon its invocation.
+  
+  If no argument is specified where one is expected then the value of the named parameter will be undefined.
 
   The arguments property is an object that contains all the arguments passed to a function on it's invocation.
 
@@ -55,7 +57,7 @@ If a return value is not specified then the function returns undefined.
 
 ## Closure
   A closure is a function that retains access to the variables of it's parent scope after the parent function has completed execution.
-  
+
 ```javascript
 var outer = function(){
   var _private = 0;

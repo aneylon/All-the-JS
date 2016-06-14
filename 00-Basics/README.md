@@ -60,4 +60,3 @@ typeof
 instanceof
 
 isNaN
-
