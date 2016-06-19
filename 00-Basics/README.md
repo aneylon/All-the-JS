@@ -1,15 +1,16 @@
 # Basics
 ### variables and types
 
-numbers
+##Numbers
 
-strings
+##Strings
 
-booleans
+##Booleans
 
-arrays
+##Arrays
+Arrays are reference variables.
 
-#objects
+##Objects
 Objects are reference variables as opposed to Numbers, Strings and Booleans.
 
 object literals
@@ -29,7 +30,7 @@ To use spaces and special characters in key names you must use bracket notation.
 Lookups use the same notation. Look ups to keys that have not been set return undefined
 ```javascript
     var first = myObj['firstProp'];
-    var second = myObj.secondProp'
+    var second = myObj.secondProp;
     var fourth = myObj.fourth; // returns undefined
 ```
 Bracket notation and variables can be used to set and retreive properties by refereing to a key dynamicaly.

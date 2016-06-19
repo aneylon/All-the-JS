@@ -1,5 +1,5 @@
 # Recursion
-  At it's most basic definition, recrusion is when a function calls itself.
+  At it's most basic definition, recursion is when a function calls itself.
 
 ## Patterns
 ### Inner function
