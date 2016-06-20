@@ -10,6 +10,15 @@ function countDownFrom(number){
   countDownFrom(number-1);
 }
 
+// write a function called power that takes base and eponent as arguments and recursively computes the base raised to the provided exponent
+
+function power(base, exponent) {
+  if (exponent == 0)
+    return 1;
+  else
+    return base * power(base, exponent - 1);
+}
+
 // Write a function that takes a nested array of any depth and returns it flattened to one level
 
 function flatten(arr){
@@ -25,3 +34,4 @@ function flatten(arr){
 	inner(arr);
 	return output;
 }
+
