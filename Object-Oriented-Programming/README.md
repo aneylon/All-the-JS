@@ -11,3 +11,69 @@ Functions that create a class of objects
 
 
 ## Pseudoclassical Classes
+
+
+var MakeCar = function(name,startingLocation){
+  return {
+    name: name,
+    loc: startingLocation
+  }
+}
+
+var moveForward = function(car){
+  car.loc += 1;
+}
+
+var CarOne = makeCar('One',0);
+var CarTwo = MakeCar('Two',2);
+
+// Decorator - Function that adds properties to an existing object
+
+var SetLocation = function(object, loc){
+  loc = loc || 1; // what about zero?
+  return object.loc = loc;
+}
+
+//Using a global function
+//vs
+//using a decorator to add a new method
+// issues with 'this'
+
+// Functional Classes
+// Build the object
+// Functional-Shared
+var Constructor = function(param){
+  var obj = {param: param};
+  var func = func;
+  return obj;
+};
+
+var func = function(){
+  this.param++;
+}
+
+// Functional-Duplicate
+//
+
+Object.create() new object with link to prototype
+
+// variable 'masking' - scope
+
+// Prototypal Classes
+var Constructor = function(param){
+  var obj = Object.create(Constructor.prototype);
+  obj.param = param;
+  return obj;
+};
+Constructor.prototype.method = function(){ this.param++ };
+
+// Pseudoclassical Classes
+new keyword causes function to be run in construction mode.
+
+var Constructor = function(param){
+  this.param = param;
+};
+Constructor.prototype.method = function(){ this.param++ };
+
+
+// Sub classes
