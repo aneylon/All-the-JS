@@ -1,5 +1,6 @@
 # Basics
 ### variables and types
+Variable masking
 
 ##Numbers
 
@@ -49,6 +50,8 @@ Keys and values can also be set along with the declartation of the variable
 If a number is used for a key then it can be referenced with either the number or as a stringified version of that number.
 
 functions
+// scope
+// variable masking
 
 null
 
