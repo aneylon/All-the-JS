@@ -1,17 +1,36 @@
 # Basics
 ### variables and types
-Variable masking
+ scope - variable masking
+ value vs reference
+```javascript
 
+```
 ##Numbers
+```javascript
+    var myNum = 13;
+```
 
 ##Strings
+```javascript
+    var myStr = 'this is a string';
+```
 
 ##Booleans
+```javascript
+    var myBool = true;
+    var myOtherBool = false;
+```
 
 ##Arrays
 Arrays are reference variables.
 
+Array literals
+```javascript
+    var myArr = [];
+```
+
 ##Objects
+this
 Objects are reference variables as opposed to Numbers, Strings and Booleans.
 
 object literals
