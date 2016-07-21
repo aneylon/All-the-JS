@@ -77,3 +77,28 @@ Constructor.prototype.method = function(){ this.param++ };
 
 
 // Sub classes
+// Functional Subclasses
+var SuperClass = function(param){
+  var obj = {param: parma};
+  obj.method = function(){obj.param++;};
+  return obj;
+};
+var SubClass = function(param){
+  var obj = SuperClass(param);
+  obj.otherMethod = function(){};
+  return obj;
+};
+
+// Pseudoclassical Subclasses
+var SuperClass = function(param){
+  this.param = param;
+};
+SuperClass.prototype.method = function(){
+  this.param++;
+};
+var SubClass = function(param){
+  SuperClass.call(this, param);
+};
+SubClass.prototype = Object.create(SuperClass.prototype);
+SubClass.prototype.constructor = Van;
+SubClass.prototype.otherMethod = function(){};
