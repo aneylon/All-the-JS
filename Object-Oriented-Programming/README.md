@@ -26,7 +26,21 @@ var Constructor = function(obj, param){
 ## Functional Classes
 Functions that create a class of objects
 
+### Functional ( Duplicate )
+In the functional pattern all instances of a object have their own copy of the methods.
+```javascript
+var Constructor = function(param){
+  var obj = {param: param}
+  var _privateNumber = 0 // closure scope 'private' variable
+  obj.method = function(){
+    // statements
+  }
+  return obj
+}
+```
+
 ### Functional Shared
+In the Shared Functional pattern all instances of an object share the same functions.
 ```javascript
 var Constructor = function(param){
   var obj = {param: param};
@@ -36,15 +50,6 @@ var Constructor = function(param){
 
 var func = function(){
   this.param++;
-}
-```
-
-### Functional Duplicate
-```javascript
-var Constructor = function(param){
-  var obj = {param: param};
-  obj.param = function(){};
-  return obj;
 }
 ```
 
