@@ -68,14 +68,20 @@ var SubClass = function(param){
 ```
 
 ## Prototypal Classes
+Prototypal Inheritance uses Object.create to make a new object that has the passed parameter as it's prototype
 
 ```javascript
 var Constructor = function(param){
-  var obj = Object.create(Constructor.prototype);
+  var obj = Object.create(protoObject);
   obj.param = param;
   return obj;
 };
-Constructor.prototype.method = function(){ this.param++ };
+protoObject = {
+  method: function(){
+    //statement
+  }
+};
+
 ```
 
 ## Pseudoclassical Classes
