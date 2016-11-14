@@ -1,5 +1,3 @@
-console.log('practice tests');
-
 var expect = chai.expect;
 var should = chai.should();
 var assert = chai.assert;
@@ -19,5 +17,31 @@ describe('Find Squares in a grid', function(){
   it('should find multiple squares in a gird', function(){
 
   })
-  
+
+})
+
+describe('Island Count', function(){
+  var testCases = [
+    {question:'.', answer:0},
+    {question:'0', answer:1},
+    {question:'.0...\n.00..\n....0', answer:2},
+    {question:'..000.\n..000.\n..000.\n.0....\n..000.', answer:3},
+    {question:'..000.\n..0...\n..0.0.\n..0...\n..000.', answer:2},
+    {question:'0....0\n......\n..00..\n......\n0....0', answer:5},
+    {question:'0...0\n0...0\n00000', answer:1},
+    {question:'0...0\n..0..\n0...0', answer:5},
+  ]
+  it('should be a function', function(){
+    expect(islandCount).to.be.a('function')
+  })
+  it('should return a number', function(){
+    testCases.forEach(function(test){
+      expect(islandCount(test.question)).to.be.a('number')
+    })
+  })
+  it('should find the correct number of islands in a string', function(){
+    testCases.forEach((test, i)=>{
+      expect(islandCount(test.question)).to.equal(test.answer)
+    })
+  })
 })
