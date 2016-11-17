@@ -36,5 +36,24 @@ var islandCount = function(mapStr) {
 }
 
 var findSquares = function(){
+  
+}
 
+var  balancedIndex = function(nums) {
+  var result = -1
+  if(nums.length === 0) return result
+  var right = nums.reduce((pre, cur) => pre + cur)
+  var last = 0
+  var left = 0
+  var foundFirst = false
+  nums.forEach((num, i) => {
+    right -= num
+    left += last
+    if(left === right && !foundFirst){
+      result = i
+      foundFirst = true
+    }
+    last = num
+  })
+  return result
 }

@@ -45,3 +45,17 @@ describe('Island Count', function(){
     })
   })
 })
+
+describe('Balanced Brackets', function(){
+  var testCases = [
+    { question: [], answer: -1},
+    { question: [ 11, 1, 5, 5, 1 ], answer: 1},
+    { question: [ 1, 2, 3, 4, 3, 2, 1 ], answer: 3},
+    { question: [ 1, 1, 0, 0, 2 ], answer: 2 }
+  ]
+  it('Should find the first index at which the sum of all values to the left and right are equal', function(){
+    testCases.forEach((test) => {
+      expect(balancedIndex(test.question)).to.equal(test.answer)
+    })
+  })
+})
