@@ -1,16 +1,15 @@
 # All-the-JS
 Learning JavaScript with Mocha and Chai testing.
 
-[Basics](./00-Basics)
-
-[Functions](./functions)
-[Flow Control](./Flow Control)
-[Math](./Math)
-[Object Oriented Programming](./Object-Oriented-Programming)
-[Recursion](./recursion)
-[AJAX](./AJAX)
-[ES6](./ES6)
-[Practice Problems](./Practice Problems)
+- [Basics](./00-Basics)
+- [Functions](./functions)
+- [Flow Control](./Flow Control)
+- [Math](./Math)
+- [Object Oriented Programming](./Object-Oriented-Programming)
+- [Recursion](./recursion)
+- [AJAX](./AJAX)
+- [ES6](./ES6)
+- [Practice Problems](./Practice Problems)
 
 ## Using the Repo
 Read the instructions for each section.
