@@ -1,3 +1,5 @@
+[Back](../../../)
+
 # Functions
   typeof returns 'function'
 
@@ -41,7 +43,7 @@ If a return value is not specified then the function returns undefined.
 ```
 ## Arguments
   Arguments are the values passed to a function upon its invocation.
-  
+
   If no argument is specified where one is expected then the value of the named parameter will be undefined.
 
   The arguments property is an object that contains all the arguments passed to a function on it's invocation.
@@ -82,3 +84,5 @@ Useful for creating private variables.
   //statements
 })();
 ```
+
+[Back](../../../)

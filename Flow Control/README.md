@@ -1,3 +1,5 @@
+[Back](../../../)
+
 #Flow Control
 
 ## Counted For Loop
@@ -26,7 +28,7 @@
     // work
   } while (condition)
 ```
-  
+
 ## Switch Case
 ```javascript
   switch(expression){
@@ -58,3 +60,5 @@
   Continue halts execution of the current iteration of the loop and beings at the next one.
 ## Labels
   Labels can be used with Break and Continue.
+
+[Back](../../../)

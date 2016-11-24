@@ -1,3 +1,5 @@
+[Back](../../../)
+
 # General CS Concepts
 Not particular to any programing language. These concepts are important for any programmer to understand.
 
@@ -48,3 +50,5 @@ O(n^c) - Polynomial
 O(c^n) - Exponential
 
 ## Space Complexity
+
+[Back](../../../)

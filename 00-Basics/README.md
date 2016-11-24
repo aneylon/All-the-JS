@@ -1,3 +1,5 @@
+[Back](../../../)
+
 # Basics
 ### variables and types
  scope - variable masking
@@ -83,3 +85,5 @@ typeof
 instanceof
 
 isNaN
+
+[Back](../../../)
