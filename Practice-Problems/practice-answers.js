@@ -1,3 +1,15 @@
+// simple reducer
+const simpleReducer = (state = 0, action) => {
+  switch(action.type){
+    case 'INCREMENT':
+      return state + 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+
 var islandCount = function(mapStr) {
   var total = 0
   var arrMap = mapStr.split('\n')
@@ -36,7 +48,7 @@ var islandCount = function(mapStr) {
 }
 
 var findSquares = function(){
-  
+
 }
 
 var  balancedIndex = function(nums) {

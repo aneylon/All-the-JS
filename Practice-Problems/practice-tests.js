@@ -2,6 +2,21 @@ var expect = chai.expect;
 var should = chai.should();
 var assert = chai.assert;
 
+describe('Simple Reducer', () => {
+  it('Should increment a counter', () => {
+    expect(simpleReducer(0, {type: 'INCREMENT'})).to.equal(1)
+  })
+  it('Should decrement a counter', () => {
+    expect(simpleReducer(1, {type: 'DECREMENT'})).to.equal(0)
+  })
+  it('Should do nothing when passed an unknown action', () => {
+    expect(simpleReducer(1, {type: 'UNKNOWN_ACTION'})).to.equal(1)
+  })
+  it('Should do return the "initial state" when not passed a state object', () => {
+    expect(simpleReducer(undefined, {})).to.equal(0)
+  })
+})
+
 describe('Find Squares in a grid', function(){
   var grids = [
     [[0,0],[0,0]],
