@@ -57,7 +57,45 @@ var one = 1, two = 'two';
 // unescaped template strings
 String.raw`in es5 "\n" is a line-feed.`
 ```
+## Objects
+### Property shorthand
+If a key and variable name match you can omit the property
+```JavaScript
+const contact = (name, email, phone, address) => (
+  {
+    name,
+    email,
+    phone,
+    address
+  }
+)
+```
+### Method shorthand
+```JavaScript
+const animal = (name, speed) => {
+  name,
+  walk() {
+    // move at speed
+  },
+  run() {
+    // move at speed * multiplier
+  }
+}
+```
+
+### Destructuring
+Pull properties out of an object by referencing their key
+```JavaScript
+let myObj = { one: 1, two: 2, three: 3, four: 4, five: {5: 'five'} }
+let { one, five: {5: theFifth}} = myObj
+```
+
+
 ## Destructuring
+### Array
+### Object
+### Class
+
 ## Parameters
 ### Rest
 ### Spread
