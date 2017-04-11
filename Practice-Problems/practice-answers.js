@@ -1,3 +1,24 @@
+/*
+All letters unique
+write a function that takes a string as an argument
+it should return true if all letters in the string are unique
+it should return false if any letter repeats
+if the string is empty it should return false
+*/
+const allLettersUnique = (input) => {
+  if(input === '' || input == undefined) return false
+  input = input.toLowerCase()
+  let storage = {}
+  for(let i = 0; i < input.length; i++){
+    if(storage[input[i]]){
+      return false
+    } else {
+      storage[input[i]] = 1
+    }
+  }
+  return true
+}
+
 // simple reducer
 const simpleReducer = (state = 0, action) => {
   switch(action.type){

@@ -2,6 +2,24 @@ var expect = chai.expect;
 var should = chai.should();
 var assert = chai.assert;
 
+describe('All Letters Unique', () => {
+  it('Should return false if no string is provided.', () => {
+    expect(allLettersUnique()).to.equal(false)
+  })
+  it('Should return false if any letter is repeated', () => {
+    expect(allLettersUnique('look')).to.equal(false)
+    expect(allLettersUnique('mississippi')).to.equal(false)
+  })
+  it('Should be case insensitive.',() => {
+    expect(allLettersUnique('Abba')).to.equal(false)
+  })
+  it('Should return true if all letters are unique.', () => {
+    expect(allLettersUnique('One')).to.equal(true)
+    expect(allLettersUnique('Two')).to.equal(true)
+    expect(allLettersUnique('Four')).to.equal(true)
+  })
+})
+
 describe('Simple Reducer', () => {
   it('Should increment a counter', () => {
     expect(simpleReducer(0, {type: 'INCREMENT'})).to.equal(1)
