@@ -1,4 +1,34 @@
 /*
+  Is String Permutation
+*/
+const isStringPermutation = function(strOne, strTwo) {
+  if(arguments.length !== 2) return false
+  if(typeof strOne !== 'string' || typeof strTwo !== 'string') return false
+  if(strOne === strTwo) return false
+  strOne = strOne.toLowerCase()
+  strTwo = strTwo.toLowerCase()
+
+  let storeOne = strToHash(strOne, {})
+  let storeTwo = strToHash(strTwo, {})
+
+  if(Object.keys(storeOne).length !== Object.keys(storeTwo).length) return false
+
+  for(let key in storeTwo){
+    if(storeOne[key] !== storeTwo[key]) return false
+  }
+  // all cases passed so return true
+  return true
+
+  function strToHash(str, hash){
+    str.split('').forEach( item => {
+      if(hash[item]) hash[item] += 1
+      else hash[item] = 1
+    })
+    return hash
+  }
+}
+
+/*
 All letters unique
 write a function that takes a string as an argument
 it should return true if all letters in the string are unique

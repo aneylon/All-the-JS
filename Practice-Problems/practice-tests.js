@@ -2,6 +2,25 @@ var expect = chai.expect;
 var should = chai.should();
 var assert = chai.assert;
 
+describe('Is Permutation', () => {
+  it('Should return false if the strings are identical', () => {
+    expect(isStringPermutation('one','one')).to.equal(false)
+  })
+  it('Should return true if the second string is a permuation of the first', () => {
+    expect(isStringPermutation('silent', 'listen')).to.equal(true)
+  })
+  it('Should return false if the second string is not a permutation of the first', () => {
+    expect(isStringPermutation('asdf', 'qwer')).to.equal(false)
+    expect(isStringPermutation('asdf', 'fdsaq')).to.equal(false)
+  })
+  it('Should be case agnostic', () => {
+    expect(isStringPermutation('Dog', 'God')).to.equal(true)
+  })
+  it('Should return false if either argument is ommited or not a string', () => {
+    expect(isStringPermutation()).to.equal(false)
+  })
+})
+
 describe('All Letters Unique', () => {
   it('Should return false if no string is provided.', () => {
     expect(allLettersUnique()).to.equal(false)
