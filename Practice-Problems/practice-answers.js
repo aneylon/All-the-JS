@@ -1,4 +1,53 @@
 /*
+  URLify
+*/
+const URLify = (str) => {
+  let output = ''
+  str = removeLeading(str)
+  str = removeTrailing(str)
+
+  for(let i = 0; i < str.length; i++){
+    if(str[i] === ' '){
+      output += '%20'
+    } else {
+      output += str[i]
+    }
+  }
+  return output
+
+  function removeTrailing(str) {
+    let output = []
+    let foundLast = false
+
+    for(let i = str.length - 1; i >= 0; i--){
+      if(!foundLast && str[i] != ' '){
+        foundLast = true
+        output.unshift(str[i])
+      } else if (foundLast) {
+        output.unshift(str[i])
+      }
+    }
+    return output.join('')
+  }
+
+  function removeLeading(str){
+    let output = ''
+    let foundFirst = false
+
+    for(let i = 0; i < str.length; i++){
+      if(!foundFirst && str[i] != ' '){
+        foundFirst = true
+        output += str[i]
+      } else if(foundFirst){
+        output += str[i]
+      }
+    }
+
+    return output
+  }
+}
+
+/*
   Is String Permutation
 */
 const isStringPermutation = function(strOne, strTwo) {

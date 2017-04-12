@@ -2,6 +2,15 @@ var expect = chai.expect;
 var should = chai.should();
 var assert = chai.assert;
 
+describe('URLify', () => {
+  it('Should replace all spaces between words with "%20"', () => {
+    expect(URLify('this is a test')).to.equal('this%20is%20a%20test')
+  })
+  it('Should remove leading and trailing spaces', () => {
+    expect(URLify('  No goods  ')).to.equal('No%20goods')
+  })
+})
+
 describe('Is Permutation', () => {
   it('Should return false if the strings are identical', () => {
     expect(isStringPermutation('one','one')).to.equal(false)

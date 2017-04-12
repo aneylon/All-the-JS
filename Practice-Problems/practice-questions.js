@@ -1,4 +1,13 @@
 /*
+  URLify
+  Replace the spaces in a string with '%20'
+  This is known as URL Percent Encoding.
+*/
+const URLify = (str) => {
+
+}
+
+/*
   Is String Permutation
 */
 const isStringPermutation = function(strOne, strTwo) {
