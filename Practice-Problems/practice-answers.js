@@ -1,4 +1,21 @@
 /*
+  Duck Duck Goose
+*/
+let duckDuckGoose = (players, goose) => {
+  let goosed = 0
+
+  for(let i = 0; i < goose - 1; i++) {
+    if(goosed < players.length - 1) {
+      goosed ++
+    } else {
+      goosed = 0
+    }
+  }
+
+  return players[goosed]
+}
+
+/*
   URLify
 */
 const URLify = (str) => {

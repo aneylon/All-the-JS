@@ -1,4 +1,11 @@
 /*
+  Duck Duck Goose
+*/
+let duckDuckGoose = (players, goose) => {
+
+}
+
+/*
   URLify
   Replace the spaces in a string with '%20'
   This is known as URL Percent Encoding.

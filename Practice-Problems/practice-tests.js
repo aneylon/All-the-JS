@@ -2,6 +2,15 @@ var expect = chai.expect;
 var should = chai.should();
 var assert = chai.assert;
 
+describe('Duck Duck Goose', () => {
+  let players = ['a','b','c','d','e']
+  it('Should return the selected "player"', () => {
+    expect(duckDuckGoose(players,1)).to.equal('a')
+    expect(duckDuckGoose(players,6)).to.equal('a')
+    expect(duckDuckGoose(players,11)).to.equal('a')
+  })
+})
+
 describe('URLify', () => {
   it('Should replace all spaces between words with "%20"', () => {
     expect(URLify('this is a test')).to.equal('this%20is%20a%20test')
