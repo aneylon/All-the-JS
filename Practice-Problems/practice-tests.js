@@ -2,6 +2,16 @@ var expect = chai.expect;
 var should = chai.should();
 var assert = chai.assert;
 
+describe('Array Modification', () => {
+  let input = [[' ', 'X', ' '],['X', 'X', 'X'],[' ', 'X', ' ']]
+  let output = [[' ', '*', ' '],['*', '*', '*'],[' ', '*', ' ']]
+  let a = 'X'
+  let b = '*'
+  it('Given an array, return a new array with the first item replaced with the second', () => {
+    expect(ArrayModification(input, a, b)).to.deep.equal(output)
+  })
+})
+
 describe('Duck Duck Goose', () => {
   let players = ['a','b','c','d','e']
   it('Should return the selected "player"', () => {

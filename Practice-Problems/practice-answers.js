@@ -1,4 +1,19 @@
 /*
+  Array Modification
+  Given a nested array replace the first character with the second
+*/
+let remove = (input, a, b) => {
+  return input.map( line => {
+    return line.map( item => {
+      if (item === a)
+        return b
+      else
+        return item
+    })
+  })
+}
+
+/*
   Duck Duck Goose
 */
 let duckDuckGoose = (players, goose) => {

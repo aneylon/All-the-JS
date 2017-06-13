@@ -1,4 +1,12 @@
 /*
+  Array Modification
+  Given a nested array replace the first character with the second
+*/
+let ArrayModification = (input, a, b) => {
+
+}
+
+/*
   Duck Duck Goose
 */
 let duckDuckGoose = (players, goose) => {
