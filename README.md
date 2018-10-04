@@ -18,3 +18,13 @@ Open the TestRunner.html file to see which tests are failing or passing.
 
 ## Checking answers
 It is best to figure out the answers yourself however, there is a 'Solution' branch containing answers if you are having trouble.
+
+### Additional Resources.
+
+- [Javascript.info](http://javascript.info/)
+
+- [JavaScript The Good Parts](https://www.amazon.com/s?field-keywords=javascript+the+good+parts)
+
+- [Secrets of the JavaScript Ninja](https://www.manning.com/books/secrets-of-the-javascript-ninja-second-edition)
+
+- [Eloquent Javascript](https://eloquentjavascript.net/)
