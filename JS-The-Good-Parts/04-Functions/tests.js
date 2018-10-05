@@ -1,3 +1,9 @@
-QUnit.test('first test', function(assert){
-  assert.ok(1=='1', "Pass!")
+
+//  
+QUnit.test('Add it up.', function(assert) {
+  assert.ok(add(1, 2) == 3, 'Adds numbers correctly.')
+  assert.ok(add(3, '5') == '35', 'Concat numbers and strings.')
+  assert.ok(add('3', 5) == '35', 'Concat strings and numbers.')
+  assert.ok(add('com', 'bow'), 'Concat two strings.')
+  // check that '+' operator is used.
 })
