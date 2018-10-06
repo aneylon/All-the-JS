@@ -4,3 +4,6 @@
   Tips:
   Use the addition operator.
 */
+var add = function(a, b){
+  return a + b
+}
