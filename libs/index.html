@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Functions</title>
+  <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.6.2.css">
+</head>
+<body>
+  <div id="qunit"></div>
+  <div id="qunit-fixture"></div>
+  <script src="https://code.jquery.com/qunit/qunit-2.6.2.js"></script>
+  <script src="dontCheat.js"></script>
+  <script>
+
+    var add = function(a, b) {
+      return a += b
+    }
+    var innerFunction = function(a){
+      result = 0
+      var thing = function(){
+        if(a >= 0) {
+          console.log(a)          
+          result += 1
+          a -= 1
+          thing()
+        }
+      }
+      thing()
+      console.log('blast off')
+      return result
+    }
+    innerFunction(5)
+    
+    QUnit.test('Add it up.', function(assert) {
+      assert.ok(didUse(add, '+'), 'Use one.')
+      assert.ok(didUse(add,['+', '=']),'Use more than one.')
+    })
+
+    QUnit.test('Recurse, inner', function(assert){
+      assert.ok(didUse(innerFunction, ['function']), 'calls itself.')
+      var strfunc = innerFunction + ''
+      assert.ok(strfunc.match(/function/gi).length >= 2, 'uses the word function more than once.')
+    })
+
+  </script>
+</body>
+</html>

@@ -1,9 +1,14 @@
-function didntCheat(functionToCheck, thingsToCheck){
+function didUse(functionToCheck, thingsToCheck){
   functionToCheck = functionToCheck + ''
   if(Array.isArray(thingsToCheck)){
+    var allPass = true
     for(var thing in thingsToCheck){
-      return checker(thing, functionToCheck)
+      var res = checker(thingsToCheck[thing], functionToCheck)
+      if( res === false){
+        allPass = false
+      }
     }
+    return allPass
   } else {
     return checker(thingsToCheck, functionToCheck)
   }
