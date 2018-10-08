@@ -12,3 +12,8 @@ QUnit.test('Subtract', function(assert) {
   assert.ok(sub(3,2) === 1, 'Subtracts correctly.')
   assert.ok(didUse(sub, '-'), 'Use the "-" operator.')
 })
+
+QUnit.test('Multiplcation', function(assert) {
+  assert.ok(multi(2,3) == 6, 'Multiplies correctly.')
+  assert.ok(didUse(multi, '*'), 'Use the "*" operator.')
+})
