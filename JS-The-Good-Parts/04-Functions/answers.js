@@ -80,3 +80,7 @@
 // var div = function(a, b) {
 //   return a / b
 // }
+
+// var mod = function(a,b) {
+//   return a % b
+// }
