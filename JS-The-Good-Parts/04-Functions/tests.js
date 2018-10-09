@@ -17,3 +17,8 @@ QUnit.test('Multiplcation', function(assert) {
   assert.ok(multi(2,3) == 6, 'Multiplies correctly.')
   assert.ok(didUse(multi, '*'), 'Use the "*" operator.')
 })
+
+QUnit.test('Division', function(assert) {
+  assert.ok(div(4,2) === 2, 'Divides correctly.')
+  assert.ok(didUse(div, '/'), 'Use the "/" operator.')
+})
