@@ -1,5 +1,3 @@
-
-//  
 QUnit.test('Add it up.', function(assert) {
   assert.ok(add(1, 2) === 3, 'Adds numbers correctly.')
   assert.ok(add(3, '5') === '35', 'Concat numbers and strings.')
