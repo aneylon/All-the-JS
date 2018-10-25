@@ -16,9 +16,23 @@ Specify the value of an argument if none is provided.
 ```
 
 ### Arrow functions
-have no *this* context. have no *arguments* object
+have no *this* context. have no *arguments* object.
 ```javascript
 var myFunc = (ArgOne) => {
   console.log(ArgOne)
 }
+```
+
+### Rest parameter and Spread operator
+Spread expands a collection into single elements.
+
+Rest collects remaining elements into an array.
+
+```javascript
+var stuff = ['a', 2, {whatever: 'man'}]
+// rest
+console.log(...stuff)
+// spread
+var someChars = [...stuff[2].whatever]
+var aNewObj = {...stuff[2]}
 ```
