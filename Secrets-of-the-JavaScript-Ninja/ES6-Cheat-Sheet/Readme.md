@@ -36,3 +36,29 @@ console.log(...stuff)
 var someChars = [...stuff[2].whatever]
 var aNewObj = {...stuff[2]}
 ```
+
+### For Of
+
+```javascript
+let arr = ['one', 1, {'one': 1}]
+for ( let el of arr ) {
+  console.log(el)
+}
+
+var stuff = '面白い'
+for(const 例 of stuff) {
+  console.log(例)
+}
+```
+
+### Destructuring Assignment 
+#### Arrays
+```javascript
+var [a, b] = ['one', 2]
+```
+
+#### Objects
+```javascript
+var contact = {name: 'Some Person', number: 1234567890}
+var { name, number } = contact
+```
