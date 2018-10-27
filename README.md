@@ -12,9 +12,20 @@ Learning JavaScript with Mocha and Chai testing.
 - [Practice Problems](./Practice-Problems)
 
 ## Using the Repo
-Read the instructions for each section.
-Complete the prompts in the 'Answers' file.
-Open the TestRunner.html file to see which tests are failing or passing.
+Each section contains a Readme.md that describes the work to be done.
+
+Complete the questions.js file to get tests to pass.
+
+Open the index.html file to view the test resuts. (Run npm install or update links to other copies of the necessary QUnit files.)
+
+Run browser sync to automatically run the tests.
+
+### Using Browser Sync
+install necessary packages and run browser sync to automatically test all changes.
+```
+npm i(nstall)
+npm start
+```
 
 ## Checking answers
 It is best to figure out the answers yourself however, there is a 'Solution' branch containing answers if you are having trouble.
