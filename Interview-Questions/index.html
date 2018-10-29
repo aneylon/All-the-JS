@@ -4,24 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Interview Questions</title>
+  <link rel="stylesheet" href="../node_modules/qunit/qunit/qunit.css">
 </head>
 <body>
-  <script>
-    // Explain the difference between the following code samples.
-    for(var i = 1; i < 5; i ++ ){
-      setTimeout(function() {
-        console.log(i)
-      }, 1000 * i)
-    }
-
-    for(var i = 1; i < 5; i ++) {
-      (function(x){
-        setTimeout(function(){
-          console.log(x)
-        }, 1000 * x)
-      })(i)
-    }
-  </script>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+  <pre>
+  </pre>
+  <script src="../node_modules/qunit/qunit/qunit.js"></script>
+  <script src="answers.js"></script>
+  <script src="tests.js"></script>
 </body>
 </html>
