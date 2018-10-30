@@ -16,3 +16,28 @@ var isUnique = function(str) {
   }
   return true
 }
+
+/*
+  Create a function called 'isPermutation'.
+  It should take two strings as arguments.
+  It should return true if the second string is a permutation of the first.
+  It should return false if the second string is not a permutation of the first.
+*/
+
+var isPermutation = function(strOne, strTwo) {
+  var mapOne = stringToObj(strOne)
+  var mapTwo = stringToObj(strTwo)
+
+  // compare two maps
+
+  function stringToObj(str){
+    var obj = {}
+    for(var i = 0; i < str.length; i++){
+      if(obj[str[i]] === undefined)
+        obj[str[i]] = 1
+      else 
+        obj[str[i]] ++
+    }
+    return obj
+  }
+}

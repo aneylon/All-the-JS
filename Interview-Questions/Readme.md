@@ -1,6 +1,8 @@
 # JavaScript Interview questions
 Questions and answers you can expect in a JavaScript interview.
 
+Programming problems for Cracking the Coding Interview.
+
 ## Closure
 ```javascript
     // Explain the difference between the following code samples.
