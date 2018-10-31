@@ -10,5 +10,6 @@ QUnit.test('Is Permutation', function(assert) {
   assert.ok(isPermutation('flog','golf'), 'golf and flog are permutations.')
   assert.notOk(isPermutation('abc', 'abbc'), 'abc and abbc are not permutations.')
   assert.notOk(isPermutation('abbc','abc'), 'the reverse is also false.')
+  assert.notOk(isPermutation('abc', 'abcd'), 'Obvious not is obviously not.')
   // handle spaces ?
 })

@@ -25,10 +25,14 @@ var isUnique = function(str) {
 */
 
 var isPermutation = function(strOne, strTwo) {
+  console.log(arguments)
   var mapOne = stringToObj(strOne)
   var mapTwo = stringToObj(strTwo)
 
-  // compare two maps
+  if(Object.keys(mapOne).length !== Object.keys(mapTwo).length)
+    return false
+
+  // check that each key has same value  
 
   function stringToObj(str){
     var obj = {}
