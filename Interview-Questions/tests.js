@@ -13,3 +13,7 @@ QUnit.test('Is Permutation', function(assert) {
   assert.notOk(isPermutation('abc', 'abcd'), 'Obvious not is obviously not.')
   // handle spaces ?
 })
+
+QUnit.test('URLify', function(assert) {
+  assert.ok(URLify('this is a test') === 'this%20is%20a%20test', 'Replace spaces with %20.')
+})

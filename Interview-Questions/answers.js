@@ -1,4 +1,13 @@
 /*
+  Create a function called 'URLify'.
+  It should take a string as an argument.
+  It should replace spaces with '%20'.
+*/
+var URLify = function(input) {
+  return 'nope'
+}
+
+/*
   Create a function called 'isUnique'.
   It should take a string as an argument.
   If the string has any repeated characters it should return false.
