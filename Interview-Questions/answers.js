@@ -1,4 +1,22 @@
 /*
+  Create a function called 'URLify'.
+  It should take a string as an argument.
+  It should replace spaces with '%20'.
+*/
+var URLify = function(input) {
+  var result = ''
+  for(var i = 0; i < input.length; i ++) {
+    if(input[i] === ' ') {
+      result += '%20'
+      console.log('yep')
+    } else {
+      result += [input[i]]
+    }
+  }
+  return result
+}
+
+/*
   Create a function called 'isUnique'.
   It should take a string as an argument.
   If the string has any repeated characters it should return false.
