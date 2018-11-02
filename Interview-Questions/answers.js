@@ -4,7 +4,16 @@
   It should replace spaces with '%20'.
 */
 var URLify = function(input) {
-  return 'nope'
+  var result = ''
+  for(var i = 0; i < input.length; i ++) {
+    if(input[i] === ' ') {
+      result += '%20'
+      console.log('yep')
+    } else {
+      result += [input[i]]
+    }
+  }
+  return result
 }
 
 /*
