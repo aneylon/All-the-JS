@@ -1,9 +1,9 @@
 /*
-  Strings
+  Numbers
 */
 
 /*
-  Numbers
+  Strings
 */
 
 /*
@@ -15,25 +15,33 @@
 */
 
 /*
+  if statments
+*/
+
+/*
+  while statements
+*/
+
+/*
+  do while statements
+*/
+
+/*
+  for statements // counted
+*/
+
+/*
+  for in statments
+*/
+
+/*
+  Switch case statments
+*/
+
+/*
+  try statements
+*/
+
+/*
   Functions
-*/
-
-/*
-  For statements
-*/
-
-/*
-  While statements
-*/
-
-/*
-  Do While statements
-*/
-
-/*
-  Try statements
-*/
-
-/*
-  Switch statements
 */
