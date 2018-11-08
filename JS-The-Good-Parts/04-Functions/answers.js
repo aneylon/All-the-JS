@@ -19,18 +19,49 @@
 // Example Answers below. Don't Cheat!
 
 
+/*
+  Patterns
+  Function Invocation
+  Method Invocation
+  Constructor
+  Applied
+*/
 
+/*
+  Arguments
+*/
 
+/*
+  Returns
+*/
 
+/*
+  Recursion
+*/
 
+/*
+  Scope
+*/
 
+/*
+  Closure
+*/
 
+/*
+  Callbacks
+*/
 
+/*
+  Curry
+*/
 
+/*
+  Cascade
+*/
 
-
-
-
+/*
+  Memoize
+*/
 
 
 
