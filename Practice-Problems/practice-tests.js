@@ -12,6 +12,17 @@ describe('Array Modification', () => {
   })
 })
 
+describe('Histogram', () => {
+  let missWord = 'mississippi'
+  let missObj = { m:1, i:4, s:4, p:2 }
+  it('Should return an object.', () => {
+    expect(typeof histogram(missWord)).to.equal('object')
+  })
+  it('Should return the correct answer.', () => {
+    expect(histogram(missWord)).to.deep.equal(missObj)
+  })
+})
+
 describe('Duck Duck Goose', () => {
   let players = ['a','b','c','d','e']
   it('Should return the selected "player"', () => {

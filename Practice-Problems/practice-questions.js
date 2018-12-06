@@ -7,6 +7,17 @@ let ArrayModification = (input, a, b) => {
 }
 
 /*
+  Histogram
+  Create a function named histogram that takes a string
+  and returns an object that has a key for each letter
+  and each key has the value of the number of times that
+  letter appears in the word.
+*/
+let histogram = function(input) {
+  // ToDo: Your code here
+}
+
+/*
   Duck Duck Goose
 */
 let duckDuckGoose = (players, goose) => {

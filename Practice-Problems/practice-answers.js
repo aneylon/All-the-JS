@@ -14,6 +14,23 @@ let remove = (input, a, b) => {
 }
 
 /*
+  Histogram
+*/
+let histogram = function(input) {
+  let output = {}
+
+  for(let i = 0; i < input.length; i++) {
+    if(output[input[i]] !== undefined) {
+      output[input[i]] ++
+    } else {
+      output[input[i]] = 1
+    }
+  }
+
+  return output
+}
+
+/*
   Duck Duck Goose
 */
 let duckDuckGoose = (players, goose) => {
