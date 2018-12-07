@@ -12,6 +12,16 @@ describe('Array Modification', () => {
   })
 })
 
+describe('Levenshtein Distance', () => {
+  it('Should return a number', () => {
+    expect(typeof levenshteinDistance('a', 'a')).to.equal('object')
+  })
+  it('Should return the correct distance', () => {
+    expect(levenshteinDistance('abc', 'def')).to.equal(3)
+    expect(levenshteinDistance('cat', 'bat')).to.equal(1)
+  })
+})
+
 describe('Histogram', () => {
   let missWord = 'mississippi'
   let missObj = { m:1, i:4, s:4, p:2 }

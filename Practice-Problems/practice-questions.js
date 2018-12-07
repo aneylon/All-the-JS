@@ -18,6 +18,17 @@ let histogram = function(input) {
 }
 
 /*
+  Levenshtein Distance
+  Write a function that takes two strings and compares the
+  between the first and second.
+  It should return the number of changes to the first string
+  necessary to convert it to the second.
+*/
+let levenshteinDistance = function(inputOne, inputTwo) {
+  // ToDo: Your code here
+}
+
+/*
   Duck Duck Goose
 */
 let duckDuckGoose = (players, goose) => {
