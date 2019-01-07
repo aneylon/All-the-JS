@@ -2,6 +2,16 @@ var expect = chai.expect;
 var should = chai.should();
 var assert = chai.assert;
 
+describe('Cambridge Word Scramble', () => {
+  // Check that the string returned is not equal to the string passed (you may have to revalidate the solution if your function randomly returns the same string)
+  // Check that first and last letters of words remain in place
+  // Check that punctuation remains in place
+  // Checks string length remains the same
+  // Checks the function returns undefined for non-strings
+  // Checks that word interiors (the letters between the first and last) maintain the same letters, albeit in a different order
+  // Checks that letters are randomly assigned.
+})
+
 describe('Array Modification', () => {
   let input = [[' ', 'X', ' '],['X', 'X', 'X'],[' ', 'X', ' ']]
   let output = [[' ', '*', ' '],['*', '*', '*'],[' ', '*', ' ']]

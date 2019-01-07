@@ -1,4 +1,12 @@
 /*
+  Cambridge Word Scramble.
+  Given a string, manipulate each word so that only the first 
+  and last character remain in the same place.
+  Punctuation should also remain in place.
+*/
+let scramble = function(input){}
+
+/*
   Array Modification
   Given a nested array replace the first character with the second
 */
